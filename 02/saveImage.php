@@ -1,6 +1,6 @@
 <?php
 $isSuccess = false;
-$userImageName = '';
+$userImageName = ' ';
 
 if (isset($_FILES['image'])) {
     $savedImage = $_FILES['image'];
@@ -23,5 +23,5 @@ if ($isSuccess) {
 } elseif (!$isImage) {
     ?>Загруженный файл не является изображением<?php
 }else{
-    ?>Не удалось сохранить файл <?php echo $userImageName;?> на сервере<?php
+    ?>Не удалось сохранить файл <?php echo $userImageName;?>на сервере<?php
 }
