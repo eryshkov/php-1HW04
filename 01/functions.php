@@ -2,14 +2,14 @@
 
 function readGuestBook($fileName)
 {
-    $file = fopen($fileName, 'r');
+    $res = fopen($fileName, 'r');
     $resultArray = [];
 
-    while (false !== $str = fgets($file)) {
+    while (false !== $str = fgets($res)) {
         $resultArray[] = trim($str);
     }
 
-    fclose($file);
+    fclose($res);
 
     return $resultArray;
 }

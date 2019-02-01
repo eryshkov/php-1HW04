@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/functions.php';
 
-$guestBookArray = readGuestBook(__DIR__ . '/guestBook.txt'); ?>
+$guestBookRecords = readGuestBook(__DIR__ . '/guestBook.txt'); ?>
 
 <!doctype html>
 <html lang="ru">
@@ -26,17 +26,24 @@ $guestBookArray = readGuestBook(__DIR__ . '/guestBook.txt'); ?>
         <h2>Последние записи:</h2>
     </div>
     <?php
-    foreach ($guestBookArray as $item) {
+    foreach ($guestBookRecords as $record) {
         ?>
         <div class="row">
             <?php
-            echo $item;
+            echo $record;
             ?>
         </div>
         <?php
     }
     ?>
-
+    <br><br>
+    <div class="row">
+        <form action="/01/addRecord.php" method="post" enctype="multipart/form-data">
+            <label>Новая запись:</label><br>
+            <textarea name="message" rows="10" cols="30" placeholder="Запись в книгу"></textarea><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </div>
 </body>
 </html>
