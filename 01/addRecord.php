@@ -16,3 +16,6 @@ $resultArray = array_merge($newRecord, $prevRecords);
 $res = fopen($filePath, 'w');
 fwrite($res, implode(PHP_EOL, $resultArray));
 fclose($res);
+
+header('Location:' . '/01/');
+exit;
