@@ -14,7 +14,10 @@
 * код к каждому заданию находится в папке под номером, который соответствует номеру задания
 
 ## Main functionality
-* uses 
+* uses `fopen()`, `fclose()`, `fgets()`, `fwrite()`, `scandir()`
+* uses `strpos()` & `implode()`
+* uses `mime_content_type()`
+* uses `header()` & `http_response_code()`
 
 ## Credits
 * thanks to **Albert Stepantsev** and to his [awesome school](https://pr-of-it.ru/courses/php-1.html)
