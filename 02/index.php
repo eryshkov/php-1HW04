@@ -50,8 +50,14 @@ foreach ($dirContents as $item) {
         }
         ?>
     </div>
+    <br>
+    <br>
     <div class="row">
-
+        <form action="/02/saveImage.php" method="post" enctype="multipart/form-data">
+            <label>Новая картинка:</label><input type="file" name="image">
+             <br>
+            <button type="submit">Send</button>
+        </form>
     </div>
 </div>
 </body>
