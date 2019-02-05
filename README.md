@@ -17,7 +17,7 @@
 * uses `fopen()`, `fclose()`, `fgets()`, `fwrite()`, `scandir()`
 * uses `strpos()` & `implode()`
 * uses `mime_content_type()`
-* uses `header()` & `http_response_code()`
+* uses `header()`
 
 ## Credits
 * thanks to **Albert Stepantsev** and to his [awesome school](https://pr-of-it.ru/courses/php-1.html)

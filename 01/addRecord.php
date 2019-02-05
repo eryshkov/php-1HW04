@@ -18,5 +18,4 @@ fwrite($res, implode(PHP_EOL, $resultArray));
 fclose($res);
 
 header('Location:' . '/01/');
-http_response_code(302);
 exit;

@@ -18,7 +18,6 @@ if (isset($_FILES['image'])) {
 
 if ($isSuccess) {
     header('Location:' . '/02/');
-    http_response_code(302);
     exit;
 } elseif (!$isImage) {
     ?>Загруженный файл не является изображением<?php
