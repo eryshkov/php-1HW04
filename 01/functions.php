@@ -2,7 +2,7 @@
 
 function readGuestBook($fileName)
 {
-    $res = fopen($fileName, 'r');
+    $res = fopen($fileName, 'rb');
     $resultArray = [];
 
     while (false !== $str = fgets($res)) {
